@@ -73,7 +73,7 @@ $ docker-compose version
 11.  Finally, we need to activate the docker swarm mode in the docker services. Before we enable the docker swarm mode we need to check the docker swarm status. **(THESE STEPS ARE OPTIONAL IF YOU ARE NOT GOING TO USE DOCKER SWARM)**.
 
 ```
-sudo docker system info | grep Swarm
+$ sudo docker system info | grep Swarm
 ```
 
 12. After checking the docker swarm status if its is inactive, we need to start the docker swarm.
@@ -85,7 +85,7 @@ $ sudo docker swarm init
 13. After starting the docker swarm mode successfully, we need to recheck the docker swarm status.
 
 ```
-$ sudo docker swarm init
+$ sudo docker system info | grep Swarm
 ```
 
 
