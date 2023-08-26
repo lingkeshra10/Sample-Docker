@@ -112,14 +112,14 @@ $ sudo apt-key add gpg
 
 4. Now add the official Docker repository by running the below command in the terminal
 
-**Make sure to check the Ubuntu version before running this command.**
+   **Make sure to check the Ubuntu version before running this command.**
 
 ```
 $ sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
 $ echo "deb [arch=amd64] https://download.docker.com/linux/ubuntu (lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list
 ```
 
-If you are not sure what Ubuntu version you are using, run the below command.
+   If you are not sure what Ubuntu version you are using, run the below command.
 
 ```
 $ lsb_release -a
