@@ -56,27 +56,33 @@ $ firewall-cmd --reload
 
 ```
 $ sudo curl -L "https://github.com/docker/compose/releases/download/1.27.4/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+```
 
-# Change the permission to execute mode in docker-compose file
+9. Change the permission to execute mode in the docker-compose file.
+
+```
 $ sudo chmod +x /usr/local/bin/docker-compose
+```
 
-# Test the installation of docker-compose
+10. Verify the docker-compose installation completed or not by checking the version of the docker-compose command.
+
+```
 $ docker-compose version
 ```
 
-9.  Finally, we need to activate the docker swarm mode in the docker services. Before we enable the docker swarm mode we need to check the docker swarm status. **(THESE STEPS ARE OPTIONAL IF YOU ARE NOT GOING TO USE DOCKER SWARM)**
+11.  Finally, we need to activate the docker swarm mode in the docker services. Before we enable the docker swarm mode we need to check the docker swarm status. **(THESE STEPS ARE OPTIONAL IF YOU ARE NOT GOING TO USE DOCKER SWARM)**.
 
 ```
 sudo docker system info | grep Swarm
 ```
 
-10. After checking the docker swarm status if its is inactive, we need to start the docker swarm.
+12. After checking the docker swarm status if its is inactive, we need to start the docker swarm.
 
 ```
 $ sudo docker swarm init
 ```
 
-11. After starting the docker swarm mode successfully, we need to recheck the docker swarm status.
+13. After starting the docker swarm mode successfully, we need to recheck the docker swarm status.
 
 ```
 $ sudo docker swarm init
